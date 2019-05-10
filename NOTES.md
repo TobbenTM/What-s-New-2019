@@ -5,3 +5,5 @@
 3. Switch kan ha when (7.X)
 4. Switch syntax (8.0)
 5. Recursive pattern i switch (8.0)
+6. Tuples i switch + stein saks papir (8.0)
+7. Deconstruction i switch (8.0)
