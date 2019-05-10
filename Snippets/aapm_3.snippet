@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title></Title>
+            <Shortcut>aapm_3</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="csharp">
+                <![CDATA[
+// Også nytt i C# 7.0 er 'when' for cases
+switch (instans)
+{
+    case IAlternativtInterface alt when alt.Verdi < 10:
+        break;
+    case IAlternativtInterface alt when alt.Verdi >= 10:
+        Console.WriteLine("Vi har en vinner!");
+        break;
+}]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

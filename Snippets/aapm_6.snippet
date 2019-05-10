@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title></Title>
+            <Shortcut>aapm_6</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="csharp">
+                <![CDATA[
+// Denne kan også brukes mot tuples for eksempel:
+var spiller1 = SteinSaksPapir.Saks;
+var spiller2 = SteinSaksPapir.Stein;
+var resultat = (spiller1, spiller2) switch
+{
+    (SteinSaksPapir.Stein, SteinSaksPapir.Papir) => "Stein blir dekt av papir",
+    (SteinSaksPapir.Stein, SteinSaksPapir.Saks) => "Stein ødelegger saks",
+    (SteinSaksPapir.Papir, SteinSaksPapir.Stein) => "Papir dekker stein",
+    (SteinSaksPapir.Papir, SteinSaksPapir.Saks) => "Papir blir kuttet av saks",
+    (SteinSaksPapir.Saks, SteinSaksPapir.Stein) => "Saks blir ødelagt av stein",
+    (SteinSaksPapir.Saks, SteinSaksPapir.Papir) => "Saks kutter papir",
+    (_, _) => "Uavgjort",
+};
+Console.WriteLine(resultat);]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

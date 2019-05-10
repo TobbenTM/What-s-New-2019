@@ -2,14 +2,6 @@
 
 namespace PatternMatching
 {
-    enum EventType
-    {
-        Opprettet,
-        Oppdatert,
-        Slettet,
-        Ukjent,
-    }
-
     interface IInterface
     {
         string InterfaceMetode();

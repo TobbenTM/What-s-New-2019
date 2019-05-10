@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title></Title>
+            <Shortcut>aapm_4</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="csharp">
+                <![CDATA[
+// Nytt i C# 8.0 er mer konsis syntax for switch statements:
+var beskrivelse = instans switch
+{
+    // Expressions, ikke statements!
+    IAlternativtInterface _   => $"Fant alternativt interface!",
+    IInterface ins            => $"Fant interface med verdi {ins.InterfaceVerdi}!",
+    _                         => "Fant ingen relevante interfaces!",
+};
+Console.WriteLine(beskrivelse);]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

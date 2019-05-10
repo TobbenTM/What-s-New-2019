@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title></Title>
+            <Shortcut>aapm_7</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="csharp">
+                <![CDATA[
+// Man kan også bruke typer direkte vha deconstruction:
+var kalkulertAvstand = instans switch
+{
+    ("Telemark", var verdi) => verdi * 2,
+    ("Oppland", var verdi)  => verdi * 3,
+    ("Oslo", var verdi)     => verdi * 1,
+    var (fylke, verdi)      => fylke.Length * verdi,
+};
+Console.WriteLine($"Avstand: {kalkulertAvstand}");]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

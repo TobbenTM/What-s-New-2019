@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title></Title>
+            <Shortcut>aapm_2</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="csharp">
+                <![CDATA[
+// I C# 7.0 kan switch uttrykket være et hvilket som helst ikke-null uttrykk
+switch (instans)
+{
+    case IAlternativtInterface alt:
+        alt.AlternativMetode();
+        break;
+    case IInterface main:
+        Console.WriteLine(main.InterfaceMetode());
+        break;
+    case null:
+        Console.WriteLine("'instans' er null!");
+        break;
+}]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
